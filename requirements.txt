@@ -1,0 +1,7 @@
+langchain
+langgraph
+langchain-google-genai
+streamlit
+python-dotenv
+bs4
+reportlab

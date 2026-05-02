@@ -1,0 +1,29 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	parse_input(parse_input)
+	fetch_game_info(fetch_game_info)
+	prepare_official(prepare_official)
+	merge_exp(merge_exp)
+	merge_image(merge_image)
+	merge_both(merge_both)
+	summarize(summarize)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> parse_input;
+	fetch_game_info -. &nbsp;both&nbsp; .-> merge_both;
+	fetch_game_info -. &nbsp;exp_only&nbsp; .-> merge_exp;
+	fetch_game_info -. &nbsp;image_only&nbsp; .-> merge_image;
+	fetch_game_info -. &nbsp;no_input&nbsp; .-> prepare_official;
+	merge_both --> summarize;
+	merge_exp --> summarize;
+	merge_image --> summarize;
+	parse_input --> fetch_game_info;
+	prepare_official --> summarize;
+	summarize --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

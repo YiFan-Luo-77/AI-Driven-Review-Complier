@@ -1,0 +1,36 @@
+{
+  "paper_id": "2301.00001",
+  "description": "Example arXiv-only paper without published DOI",
+  "semantic_scholar": {
+    "title": "A Novel Approach to Machine Learning",
+    "authors": ["Jane Doe", "John Smith"],
+    "year": 2023,
+    "abstract": "We present a novel approach to machine learning that improves upon existing methods. Our technique demonstrates significant improvements in both accuracy and efficiency across multiple benchmark datasets.",
+    "venue": "arXiv",
+    "external_ids": {
+      "ArXiv": "2301.00001",
+      "CorpusId": 12345678
+    },
+    "open_access_pdf": {
+      "url": "https://arxiv.org/pdf/2301.00001.pdf",
+      "status": "GREEN"
+    }
+  },
+  "arxiv": {
+    "title": "A Novel Approach to Machine Learning",
+    "authors": [
+      "Jane Doe",
+      "John Smith"
+    ],
+    "year": 2023,
+    "abstract": "We present a novel approach to machine learning that improves upon existing methods. Our technique demonstrates significant improvements in both accuracy and efficiency across multiple benchmark datasets.",
+    "venue": "arXiv",
+    "pdf_link": "https://arxiv.org/pdf/2301.00001.pdf"
+  },
+  "unpaywall": null,
+  "expected_output": {
+    "has_metadata": true,
+    "has_full_text": true,
+    "has_summary": true
+  }
+}
